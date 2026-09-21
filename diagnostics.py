@@ -24,13 +24,13 @@ class Diagnostics:
 
             ('Dyspnea', 'TBorCancer Bronchitis', 
             {
-            (T, T): 0.9,
-            (T, F): 0.7,
-            (F, T): 0.8,
-            (F, F): 0.1
+            (T, T): 0.9,                                                # P(+Dyspnea | TBorCancer = True, Bronchitis = True)
+            (T, F): 0.7,                                                # P(+Dyspnea | TBorCancer = True, Bronchitis = False)
+            (F, T): 0.8,                                                # P(+Dyspnea | TBorCancer = False, Bronchitis = True)
+            (F, F): 0.1                                                 # P(+Dyspnea | TBorCancer = False, Bronchitis = False)
             }),
             
-            ('xray', 'TBorCancer', {(T): 0.99, (F): 0.05})
+            ('xray', 'TBorCancer', {(T): 0.99, (F): 0.05})              # Var: xray; Parent: TBorCancer; P(+xray | TBorCancer)
 
     ])
 
