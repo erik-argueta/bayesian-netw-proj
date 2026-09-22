@@ -39,7 +39,7 @@ class Diagnostics:
                         (F, F): 0.1                                             # P(+Dyspnea | TBorCancer = False, Bronchitis = False)
                     }),
                     
-                    ('xray', 'TBorCancer', {(T): 0.99, (F): 0.05})              # Var: xray; Parent: TBorCancer; P(+xray | TBorCancer)
+                    ('Xray', 'TBorCancer', {(T): 0.99, (F): 0.05})              # Var: xray; Parent: TBorCancer; P(+xray | TBorCancer)
             ])
         
 
