@@ -1,3 +1,8 @@
+"""
+Title: Programming Project 1 (Bayesian Networks)
+Authors: Erik Argueta, Jerico Avila, Jose Cervantes
+"""
+
 from aima.probability import *
 
 T, F = True, False
